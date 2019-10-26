@@ -15,7 +15,6 @@ import socketIO from './utils/socketIO';
 const dbNameSpace = createNamespace('db');
 db.Sequelize.useCLS(dbNameSpace);
 
-
 const isProduction = env.NODE_ENV === 'production';
 
 // Create global app object

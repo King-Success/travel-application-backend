@@ -1,6 +1,6 @@
 [![Reviewed by Hound](https://img.shields.io/badge/ESLint%20Reviewed%20by%20-HoundCI-d16ef5)](https://houndci.com)
 [![Build Status](https://travis-ci.com/King-Success/travel-application-backend.svg?branch=develop)](https://travis-ci.com/King-Success/travel-application-backend)
-[![Coverage Status](https://coveralls.io/repos/github/casper-inc/casper-backend/badge.svg?branch=develop)](https://coveralls.io/github/casper-inc/casper-backend?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/King-Success/travel-application-backend/badge.svg?branch=develop)](https://coveralls.io/github/King-Success/travel-application-backend?branch=develop)
 
 ---
 

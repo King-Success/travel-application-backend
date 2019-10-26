@@ -1,7 +1,7 @@
 {
-  "name": "casper-backend",
+  "name": "travel-application-backend",
   "version": "1.0.0",
-  "description": "Casper - Making company travel and accomodation easy and convenient.",
+  "description": "Travel application - Making company travel and accomodation easy and convenient.",
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test nyc --reporter=text --reporter=html mocha src/test/*.*.js --timeout 10000 -c --require @babel/register --exit",
@@ -18,16 +18,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dchima/casper-backend.git"
+    "url": "git+https://github.com/king-success/travel-application-backend.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dchima/casper-backend/issues"
+    "url": "https://github.com/king-success/travel-application-backend/issues"
   },
-  "homepage": "https://github.com/dchima/casper-backend#readme",
+  "homepage": "https://github.com/king-success/travel-application-backend#readme",
   "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
     "@hapi/joi": "^15.1.1",
     "@hapi/joi-date": "^1.3.0",
@@ -64,11 +69,6 @@
     "underscore": "^1.9.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/register": "^7.5.5",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "coveralls": "^3.0.6",

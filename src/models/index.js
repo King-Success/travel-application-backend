@@ -9,14 +9,18 @@ const environ = env.NODE_ENV || 'development';
 const config = sequelizeConfig[environ];
 
 const db = {};
+let sequelize;
+if(environ === 'production') {
+   sequelize = new Sequelize(config.databaseUrl);
+}else {
+   sequelize = new Sequelize(
+    config.database,
+    config.username,
+    config.password,
+    config
+  );
+}
 
-if (environ === 'test') config.logging = false;
-const sequelize = new Sequelize(
-  config.database,
-  config.username,
-  config.password,
-  config
-);
 
 fs.readdirSync(__dirname)
   .filter(

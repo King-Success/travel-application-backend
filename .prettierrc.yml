@@ -1,0 +1,4 @@
+singleQuote: true
+arrowParens: false
+arrowBodyStyle: false
+requireJsdoc: false

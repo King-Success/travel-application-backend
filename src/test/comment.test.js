@@ -140,6 +140,7 @@ describe('Comment route endpoints', () => {
           errors: undefined
         }
       };
+      // sinon.stub(CommentService, 'deleteCommentById').throws();
       await CommentController.deleteComment(req, res);
       expect(res.status).to.have.been.calledWith(500);
       expect(res.json).to.have.been.calledWith(errorResponse);
